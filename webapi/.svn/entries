@@ -1,15 +1,15 @@
 10
 
 dir
-39
+41
 svn://liaoqi@192.168.0.11/project_art_teach/src/webroot/webapi
 svn://liaoqi@192.168.0.11/project_art_teach
 
 
 
-2016-10-14T07:12:36.706592Z
-39
-liaoqi
+2016-10-17T06:07:43.989303Z
+40
+art
 
 
 
@@ -198,14 +198,14 @@ wangyisheng
 
 artDevice_api.php
 file
+43
 
 
 
-
-2016-10-13T06:08:22.000000Z
-b79bb369257b3ffef517c71d07d24ad4
-2016-10-13T09:58:22.314508Z
-37
+2016-10-19T08:26:35.000000Z
+e5fc9305ebbd762c030640d788b3f9a2
+2016-10-19T10:32:19.218050Z
+43
 liaoqi
 
 
@@ -228,7 +228,7 @@ liaoqi
 
 
 
-3844
+4133
 
 login_api.php
 file
@@ -504,14 +504,14 @@ liaoqi
 
 artSchool_api.php
 file
+42
 
 
 
-
-2016-10-14T06:46:07.000000Z
-d687a67f14404d88459a92cbfba48e28
-2016-10-14T07:12:36.706592Z
-39
+2016-10-18T08:35:31.000000Z
+a9676087ae55837dcd729673aa1bc4f2
+2016-10-18T10:06:08.682115Z
+42
 liaoqi
 
 
@@ -534,5 +534,5 @@ liaoqi
 
 
 
-4290
+4085
 

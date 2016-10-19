@@ -19,8 +19,8 @@
 			$pageSize=$_POST['rows'];
 		}
 		
-		$result=$db->queryByPage("a.*,b.SCHOOL_NAME,
-		ART_DEVICE_LIST a left join ART_SCHOOL b on a.SCHOOL_ID=b.SCHOOL_ID",$where,$page,$pageSize,$order_string);
+		$result=$db->queryByPage("a.*,a1.SCHOOL_NAME",
+		"ART_DEVICE_LIST a left join ART_SCHOOL a1 on a.SCHOOL_ID=a1.SCHOOL_ID",$where,$page,$pageSize,$order_string);
 		$allData=$db->fetchAll();
 
 		$arr=array();
@@ -29,9 +29,11 @@
 		$arr["pageSize"]=$pageSize;
 		msg_debug(json_encode($arr));
 		echo json_encode($arr);
+	//	console_log($arr);
+		echo("console.log(".json_encode($arr).");");
 		$db->close();
 	}
-
+	/*
 	function loadTree_action()
 	{
 		$db=new mysql_ht_db(1);
@@ -45,6 +47,7 @@
 		msg_debug("department loadtree = ".json_encode($data));
 		$db->close();
 	}
+	*/
 
 	function add_action()
 	{
@@ -125,11 +128,11 @@
 		}
 	}
 	msg_debug("-------department_api-----begin-----------------".$_GET['action']);
-	//加载部门树
-	if ( $_GET['action'] != null && $_GET['action'] == "loadtree" )
-	{
-		loadTree_action();
-	}
+	//加载设备树
+//	if ( $_GET['action'] != null && $_GET['action'] == "loadtree" )
+//	{
+//	}
+
 	//查询设备列表
 	if ( $_GET['action'] != null && $_GET['action'] == "query" )
 	{
@@ -150,5 +153,17 @@
 	{
 		delete_action();
 	}
+	
+	function console_log($data) {
+    if (is_array($data) || is_object($data)) {
+        echo("<script>console.log('".json_encode($data)."');</script>");
+    } else {
+        echo("<script>console.log('".$data."');</script>");
+    }
+}
+	
+	
+	
+	
 
 ?>

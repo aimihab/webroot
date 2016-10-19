@@ -192,7 +192,7 @@ $(document).ready(function(){
 	    ]]    
 	});  
 	$("#p").panel({
-		title:"数据结构",
+		title:"文件结构",
 		fit:true
 	});
 

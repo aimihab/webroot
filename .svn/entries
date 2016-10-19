@@ -1,14 +1,14 @@
 10
 
 dir
-39
+41
 svn://liaoqi@192.168.0.11/project_art_teach/src/webroot
 svn://liaoqi@192.168.0.11/project_art_teach
 
 
 
-2016-10-14T07:12:36.706592Z
-39
+2016-10-18T07:24:49.155129Z
+41
 liaoqi
 
 
@@ -137,6 +137,40 @@ wangyisheng
 charts
 dir
 
+teach_login.js
+file
+44
+
+
+
+2016-10-19T10:39:16.000000Z
+06c58a3807ed3f61eb4ecedc3cffda93
+2016-10-19T10:43:44.594202Z
+44
+liaoqi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+986
+
 auth.php
 file
 
@@ -211,6 +245,74 @@ liaoqi
 
 986
 
+teach_auth.php
+file
+44
+
+
+
+2016-10-19T10:39:15.000000Z
+cab122a5b1604b8ae276fb3989a7ade0
+2016-10-19T10:43:44.594202Z
+44
+liaoqi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+127
+
+README.md
+file
+42
+
+
+
+2016-10-14T10:41:23.000000Z
+8f1b4482d735e71a549e970de9b2a09f
+2016-10-18T10:06:08.682115Z
+42
+liaoqi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+54
+
 login.php
 file
 
@@ -244,40 +346,6 @@ gongmingde
 
 
 1681
-
-log.txt
-file
-
-
-
-
-2016-10-11T01:48:51.000000Z
-2acc0aee9dd4e82a3d363a4eef74a47a
-2016-09-10T06:36:47.870076Z
-9
-wangyisheng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-324
 
 admin_auth.php
 file
@@ -313,17 +381,17 @@ liaoqi
 
 127
 
-tech_login.php
+log.txt
 file
 
 
 
 
 2016-10-11T01:48:51.000000Z
-92ed8af02847b435ac94727ae459708d
-2016-10-11T01:27:53.157911Z
-20
-yls
+2acc0aee9dd4e82a3d363a4eef74a47a
+2016-09-10T06:36:47.870076Z
+9
+wangyisheng
 
 
 
@@ -345,10 +413,51 @@ yls
 
 
 
-39
+324
+
+.git
+dir
+
+
+
+add
 
 art_m
 dir
+
+teach_login.php
+file
+44
+
+
+
+2016-10-19T10:39:17.000000Z
+0801ba9f7ce2b7f398c71110aae941e4
+2016-10-19T10:43:44.594202Z
+44
+liaoqi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1630
 
 dataapi
 dir
@@ -497,4 +606,38 @@ yls
 
 js
 dir
+
+teach_main.php
+file
+44
+
+
+
+2016-10-19T10:39:18.000000Z
+c185bf9145ca257d0b4940285e778a95
+2016-10-19T10:43:44.594202Z
+44
+liaoqi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7596
 

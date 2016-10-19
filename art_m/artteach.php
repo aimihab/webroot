@@ -23,7 +23,7 @@
     </div>
     <div data-options="region:'center'" split="false">
     	<table id="dataGrid"></table> 
-    </div>
+    </div> 
 
     <div id="AandEwin" class="easyui-window" collapsible="false" minimizable="false" maximizable="false" closed="true" style="width:400px;height:350px;padding-left:30px">
 		<form id="cj_from" name="cj_from">

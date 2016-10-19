@@ -33,11 +33,7 @@
 	}
 	function querycombox_action(){
 		$db=new mysql_ht_db(1);
-		$where="where 1=1 ";
-//		if ($_GET["COMBOXID"]!=null){
-//			$where=$where."and a.DEP_ID in ("."select b.DEP_ID from SYS_DEPARTMENT b where b.DEP_ID=".$_GET['COMBOXID']." or b.PARENT_DEP_ID =".$_GET['COMBOXID'].")";
-//		}
-//		msg_debug("post=".$_POST["COMBOXID"].",get:".$_GET["COMBOXID"]);	
+		$where="where 1=1 ";	
 		msg_debug($where);
 		$result=$db->query("select a.SCHOOL_ID as id,a.SCHOOL_NAME as text from ART_SCHOOL a ".$where);
 		$allData=$db->fetchAll();
@@ -53,10 +49,13 @@
 			a.SCHOOL_NAME as text from ART_SCHOOL a ");
 		$allData=$db->fetchAll();
 //		msg_debug("before department loadtree = ".json_encode($allData));
-		$bta=new BuildTreeArray($allData,'id',0);
-		$data=$bta->getTreeArray();
-		echo json_encode($data);
-		msg_debug("SCHOOL loadtree = ".json_encode($data));
+		//echo $allData;
+//		$bta=new BuildTreeArray($allData,'id',0,0);
+			
+//		$data=$bta->getTreeArray(0);
+		//echo json_encode($data);
+		echo json_encode($allData);
+		//msg_debug("SCHOOL loadtree = ".json_encode($data));
 		$db->close();
 	}
 

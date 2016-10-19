@@ -182,7 +182,17 @@ $(document).ready(function(){
 	        {field:'REGISTER_CODE',title:'注册码'},    
 	        {field:'REGISTER_TIME',title:'注册时间'},  
 	        {field:'CREATE_TIME',title:'首次登录时间'},    
-	        {field:'STAUTS',title:'设备状态'},    
+	        {field:'STAUTS',title:'设备状态',
+				formatter: function(value,row,index){
+									if (value==0){
+										return '首次登录';
+									}else if(value==1){
+										return '未注册';
+									}else{
+										return'正常状态';
+										}
+								}
+			},    
 	        {field:'SCHOOL_NAME',title:'设备所属学校'},  
 	        {field:'STUDENT_NAME',title:'关联学生姓名'}, 
 			{field:'STUDENT_PHONE',title:'关联学生电话'}, 
@@ -192,8 +202,7 @@ $(document).ready(function(){
 			{field:'ENTRY_YEAR',title:'入学年份'},
 			{field:'EMERGENCY_CONTACT',title:'紧急联系人'},
 			{field:'EMERGENCY_PHONE',title:'紧急联系人电话'},             
-	        {field:'COMMENTS',title:'备注'},    
-	        
+	        {field:'COMMENTS',title:'备注'},     
 	    ]]    
 	});  
 	$("#p").panel({
